@@ -1,4 +1,4 @@
 # Room Environment Project
 
 ### 🕒 Live Clock (Bangladesh Time):
-<img src="https://custom-clock.vercel.app/api/clock?timezone=Asia/Dhaka&color=white" alt="Live Clock" />
+[![Live Clock](https://clock.v7x.co/widget?timezone=Asia/Dhaka&color=green&bg=black)](https://github.com/rroyops)
