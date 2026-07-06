@@ -1,0 +1,154 @@
+/* Room No. 320 Environment - Custom Stylesheets */
+
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  letter-spacing: -0.011em;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography styles */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: var(--font-display);
+}
+
+/* Nav Item Tweaks */
+.navbar-nav .nav-link {
+  color: var(--bs-secondary-color);
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: var(--bs-secondary-bg);
+  color: var(--bs-success-text-emphasis);
+}
+
+.navbar-nav .nav-link.active {
+  background-color: rgba(25, 135, 84, 0.08);
+}
+
+/* Custom shadow helpers */
+.shadow-xs {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Card Hover Effects */
+.hover-card {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease-in-out;
+}
+
+.hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 16px -6px rgba(0, 0, 0, 0.08);
+}
+
+/* Hero Carousel Overlay */
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.85) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-carousel-item {
+  height: 600px;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Dark mode overrides for custom items */
+[data-bs-theme="dark"] .bg-white {
+  background-color: #1a1a1a !important;
+}
+
+[data-bs-theme="dark"] .navbar {
+  background-color: #121212 !important;
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: #1a1a1a !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-bs-theme="dark"] .text-dark {
+  color: #e5e5e5 !important;
+}
+
+[data-bs-theme="dark"] .text-muted {
+  color: #9e9e9e !important;
+}
+
+/* Upload Dropzone Styling */
+.upload-dropzone {
+  border: 2px dashed rgba(25, 135, 84, 0.25);
+  border-radius: 12px;
+  background-color: rgba(25, 135, 84, 0.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.upload-dropzone:hover {
+  border-color: rgba(25, 135, 84, 0.5);
+  background-color: rgba(25, 135, 84, 0.05);
+}
+
+/* Corporate details footer link list */
+.hover-white:hover {
+  color: #ffffff !important;
+  transition: color 0.15s ease-in-out;
+}
+
+/* Status dots */
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-active {
+  background-color: #198754;
+  box-shadow: 0 0 8px #198754;
+}
+
+/* Bento-style dashboard blocks */
+.bento-card {
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+[data-bs-theme="dark"] .bento-card {
+  border-color: rgba(255, 255, 255, 0.05);
+}

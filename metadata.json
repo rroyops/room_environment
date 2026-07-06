@@ -1,0 +1,6 @@
+{
+  "name": "Room No. 320 Environment",
+  "description": "A complete, modern, and responsive portal for the Room No. 320 Environment community. Features activities, member directories, announcement boards, customizable profiles, gallery uploads, contact forms, and comprehensive user/admin control dashboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

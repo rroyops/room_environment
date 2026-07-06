@@ -1,0 +1,19 @@
+# Room No. 320 Environment - Apache Server Config
+# Put this in C:\xampp\htdocs\Room-No-320-Environment\
+
+# Enable rewrite engine (optional for pretty routing later)
+RewriteEngine On
+
+# Prevent direct folder index viewing (Directory Listing blocking)
+Options -Indexes
+
+# Basic security protection against script injection and clickjacking
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Adjust default upload size limits for local testing if necessary
+# php_value upload_max_filesize 20M
+# php_value post_max_size 20M
